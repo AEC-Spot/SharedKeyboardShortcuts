@@ -23,7 +23,7 @@
 <script>
 async function loadXML() {
     try {
-        const response = await fetch("KeyboardShortcutsShort.xml");
+        const response = await fetch("KeyboardShortcuts.xml");
         const text = await response.text();
 
         // Parse XML text into an XML document
@@ -66,3 +66,4 @@ loadXML();
 
 </body>
 </html>
+
