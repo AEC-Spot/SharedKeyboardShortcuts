@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Keyboard Shortcuts Table</title>
+
+<style>
+    body { font-family: Arial; margin: 25px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background: #eee; }
+</style>
+</head>
+<body>
+
+<h2>Keyboard Shortcuts</h2>
+
+<table id="shortcutsTable">
+    <thead id="tableHead"></thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script>
+async function loadXML() {
+    try {
+        const response = await fetch("KeyboardShortcutsShort.xml");
+        const text = await response.text();
+
+        // Parse XML text into an XML document
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(text, "text/xml");
+
+        const items = xmlDoc.getElementsByTagName("ShortcutItem");
+        if (items.length === 0) return;
+
+        const tableHead = document.getElementById("tableHead");
+        const tableBody = document.getElementById("tableBody");
+
+        // Get attribute names (columns)
+        const attributeNames = Array.from(items[0].attributes).map(a => a.name);
+
+        // Build header row
+        tableHead.innerHTML = "<tr>" + 
+            attributeNames.map(a => `<th>${a}</th>`).join("") +
+            "</tr>";
+
+        // Build table rows
+        let rows = "";
+        for (let item of items) {
+            rows += "<tr>";
+            attributeNames.forEach(attr => {
+                rows += `<td>${item.getAttribute(attr) || ""}</td>`;
+            });
+            rows += "</tr>";
+        }
+        tableBody.innerHTML = rows;
+
+    } catch (error) {
+        document.body.innerHTML += "<p style='color:red;'>Error loading XML file.</p>";
+        console.error(error);
+    }
+}
+
+loadXML();
+</script>
+
+</body>
+</html>

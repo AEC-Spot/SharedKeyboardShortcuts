@@ -1,0 +1,7 @@
+<Shortcuts>
+  <ShortcutItem CommandName="Background Processes" CommandId="ID_PARALLEL_INDICATOR" Shortcuts="Fn11" Paths="Status Bar" />
+  <ShortcutItem CommandName="Shaded with Edges" CommandId="ID_IMAGE_SHADING_WITH_EDGES" Shortcuts="SD" Paths="View Control Bar" />
+  <ShortcutItem CommandName="Temporarily Apply Template Properties" CommandId="ID_TEMPORARILY_APPLY_TEMPLATE_PROPERTIES" Paths="View Control Bar" />
+  <ShortcutItem CommandName="Options" CommandId="ID_VIEWCUBE_OPTIONS" Paths="View Cube" />
+  <ShortcutItem CommandName="Graphic Override by Element in View: toggle halftone" CommandId="ID_VIEW_OVERRIDE_ELEMENTS_HALFTONE" Shortcuts="EOH" />
+</Shortcuts>
