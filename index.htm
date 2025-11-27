@@ -9,6 +9,7 @@
     table { width: 100%; border-collapse: collapse; }
     th, td { border: 1px solid #ccc; padding: 8px; }
     th { background: #eee; }
+    tr.highlight { background-color: #ffeb3b; }
 </style>
 </head>
 <body>
@@ -46,10 +47,15 @@ async function loadXML() {
             attributeNames.map(a => `<th>${a}</th>`).join("") +
             "</tr>";
 
-        // Build table rows
+            
+            // Highlight specific CommandName values
+            const highlightValues = ["Background Processes", "Options", "Graphic Override by Element in View: toggle halftone"];
+            // Build table rows
         let rows = "";
         for (let item of items) {
-            rows += "<tr>";
+            const commandName = item.getAttribute("CommandName") || "";
+            const shouldHighlight = highlightValues.includes(commandName);
+            rows += shouldHighlight ? "<tr class='highlight'>" : "<tr>";
             attributeNames.forEach(attr => {
                 rows += `<td>${item.getAttribute(attr) || ""}</td>`;
             });
