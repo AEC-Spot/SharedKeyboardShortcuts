@@ -23,7 +23,7 @@
 <script>
 async function loadXML() {
     try {
-        const response = await fetch("KeyboardShortcuts.xml");
+        const response = await fetch("KeyboardShortcutsShort.xml");
         const text = await response.text();
 
         // Parse XML text into an XML document
@@ -36,8 +36,10 @@ async function loadXML() {
         const tableHead = document.getElementById("tableHead");
         const tableBody = document.getElementById("tableBody");
 
-        // Get attribute names (columns)
-        const attributeNames = Array.from(items[0].attributes).map(a => a.name);
+        // Get attribute names (columns) and exclude CommandId
+        const attributeNames = Array.from(items[0].attributes)
+            .map(a => a.name)
+            .filter(name => name !== "CommandId");
 
         // Build header row
         tableHead.innerHTML = "<tr>" + 
@@ -66,4 +68,3 @@ loadXML();
 
 </body>
 </html>
-
