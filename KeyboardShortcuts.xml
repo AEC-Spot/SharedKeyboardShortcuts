@@ -255,13 +255,13 @@
   <ShortcutItem CommandName="ElbowDown LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%ElbowDown" Shortcuts="EDN" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="ElbowLeft LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%ElbowLeft" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="ElbowUp LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%ElbowUp" Shortcuts="EUP" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
-  <ShortcutItem CommandName="FlipMultiple LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%Flip" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
+  <ShortcutItem CommandName="FlipMultiple LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%Flip" Shortcuts="ETFH" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="RotateFittings LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%RotateFitting" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="RotateFitting 180 LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%RotateFitting180" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="DeleteSystem LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%DeleteSystem" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="DisconnectLT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%Disconnect" Shortcuts="DIS" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="MoveConnect LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%MoveConnect" Shortcuts="MCC" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
-  <ShortcutItem CommandName="Mo-CoAlign LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%MoveConnectAlign" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
+  <ShortcutItem CommandName="Mo-CoAlign LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%MoveConnectAlign" Shortcuts="MCA" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="Align in3D LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%ThreeDeeAlign" Shortcuts="A33" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="AlignBranch LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%ThreeDeeBranchAlignLite" Shortcuts="AB" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
   <ShortcutItem CommandName="AlignBranch+ LT" CommandId="CustomCtrl_%CustomCtrl_%[N] LT (Microdesk)%[N] MEP LT%ThreeDeeBranchAlign" Paths="[N] LT (Microdesk)&gt;[N] MEP LT" />
